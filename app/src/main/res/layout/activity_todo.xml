@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TodoActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview"
+        android:text="Todo Items"
+        android:background="@color/grey"
+        android:paddingBottom="10dp"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:gravity="center_horizontal"/>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/todo_list_id"
+        android:layout_below="@id/textview"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_todo_btn_id"
+        android:text="Add"
+        android:textAllCaps="false"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

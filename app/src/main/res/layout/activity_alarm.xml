@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".AlarmActivity">
+
+    <TimePicker
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/timepicker_id"
+        android:numbersTextColor="@color/purple_500"/>
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/alarm_date_et_id"
+        android:hint="@string/date"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/timepicker_id"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:inputType="date"
+        android:maxLength="2"
+        android:layout_marginLeft="10dp"
+        android:importantForAutofill="no"
+        android:layout_marginStart="10dp" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/alarm_save_toggle_id"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/timepicker_id"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="10dp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/alarm_date_et_id">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/alarm_time_tv_id"
+        android:text="Time"
+        android:layout_marginHorizontal="10dp"
+        android:textSize="50sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/alarm_date_tv_id"
+        android:text="Date"
+        android:gravity="center"
+        android:textSize="19sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_default_alarm"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/layout"
+        android:contentDescription="@string/alarm_image" />
+
+</RelativeLayout>
